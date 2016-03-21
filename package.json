@@ -1,0 +1,34 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "description": "The place where fantasy first meets reality.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorysterley/sandbox.git"
+  },
+  "author": "Rory Sterley <rorysterley@gmail.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/rorysterley/sandbox/issues"
+  },
+  "homepage": "https://github.com/rorysterley/sandbox#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0"
+  }
+}

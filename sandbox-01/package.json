@@ -1,0 +1,15 @@
+{
+  "name": "sandbox-01",
+  "version": "0.0.1",
+  "description": "The first of the boxes of sand.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rory Sterley",
+  "license": "",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4"
+  }
+}
