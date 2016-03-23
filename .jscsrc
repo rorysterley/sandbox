@@ -55,7 +55,7 @@
   "disallowSpacesInAnonymousFunctionExpression": {
       "beforeOpeningRoundBrace": true
   },
-  "disallowSpacesInsideObjectBrackets": "all",
+  "disallowSpacesInsideObjectBrackets": false,
   "disallowSpacesInsideArrayBrackets": "all",
   "disallowSpacesInsideParentheses": true,
 

@@ -89,6 +89,7 @@
 
     // Custom Globals
     "globals"       : {         // additional predefined global variables
-           "angular": true      // true: angular will be loaded into scope
+           "angular": true,     // true: angular will be loaded into scope
+           "Phaser" : true      // true: Phaser will be loaded into scope
          }
 }
