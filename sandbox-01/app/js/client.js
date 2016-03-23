@@ -1,3 +1,13 @@
 'use strict';
 
-alert('Hello from Sandbox 1');
+var game = new Phaser.Game(400, 300, Phaser.AUTO, 'game',
+  { preload: preload, create: create, update: update });
+
+function preload() {
+}
+
+function create() {
+}
+
+function update() {
+}

@@ -40,7 +40,7 @@ gulp.task('jshint', function() {
                    sandbox + 'server.js',
                    sandbox + 'routes/**/*.js',
                    sandbox + 'lib/**/*.js',
-                   sandbox + '!app/js/vendor/*'])
+                  '!' + sandbox + 'app/js/vendor/*'])
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -50,7 +50,7 @@ gulp.task('jscs', function() {
                    sandbox + 'server.js',
                    sandbox + 'routes/**/*.js',
                    sandbox + 'lib/**/*.js',
-                   sandbox + '!app/js/vendor/*'])
+                  '!' + sandbox + 'app/js/vendor/*'])
     .pipe(jscs('.jscsrc'))
     .pipe(jscs.reporter());
 });
