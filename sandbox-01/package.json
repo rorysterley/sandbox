@@ -11,5 +11,8 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "phaser": "^2.4.6"
   }
 }
