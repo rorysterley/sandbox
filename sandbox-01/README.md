@@ -1,3 +1,3 @@
 # Sandbox 1
 
-Initial testing with Phaser.
+Initial experimentation with Phaser and basic isomorphic viewing... maybe more.
