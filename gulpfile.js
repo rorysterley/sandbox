@@ -61,7 +61,8 @@ gulp.task('build', [
                     'copy-css',
                     'copy-fonts',
                     'copy-html',
-                    'copy-img'
+                    'copy-img',
+                    'copy-assets'
                    ]);
 
 gulp.task('dist', ['build'], function() {
@@ -156,6 +157,21 @@ gulp.task('copy-img', ['clean-img'], function() {
                                                 sandbox + 'build/'));
 });
 
+// ----- ASSETS -----
+gulp.task('clean-assets', function() {
+  return gulp.src((gutil.env.type === 'dist'
+      ? [sandbox + 'dist/assets/**/*']
+      : [sandbox + 'build/assets/**/*']),
+      {read: false})
+    .pipe(clean({force: true}));
+});
+
+gulp.task('copy-assets', ['clean-assets'], function() {
+  return gulp.src([sandbox + 'app/assets/**/*'], {base: './' + sandbox + 'app'})
+    .pipe(gulp.dest(gutil.env.type === 'dist' ? sandbox + 'dist/' :
+                                                sandbox + 'build/'));
+});
+
 // WATCH =======================================================================
 gulp.task('watch', function() {
   // ----- JS -----
@@ -173,6 +189,9 @@ gulp.task('watch', function() {
 
   // ----- IMG -----
   gulp.watch([sandbox + 'app/img/**/*'], ['copy-img']);
+
+  // ----- ASSETS -----
+  gulp.watch([sandbox + 'app/assets/**/*'], ['copy-assets']);
 
   console.log(' ===========================\n' +
               ' = gulp is watching you... =  (To stop watch: Ctrl + C)\n' +
